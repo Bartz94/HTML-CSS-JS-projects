@@ -1,0 +1,22 @@
+header{
+    display: flex;
+    justify-content: space-between;
+}
+header h3{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+nav ul{
+    list-style-type: none;
+}
+nav li{
+    display: inline;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
