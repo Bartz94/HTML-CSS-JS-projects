@@ -1,81 +1,84 @@
-*{
+html{
+    font-family: 'Gugi', cursive;
+}
+
+body{
     background-image: url("images/bg-image.jpg");
     color: rgb(181, 186, 187);
-    font-family: 'Gugi', cursive;
-    margin: 0;
+    margin: 0 auto;
 }
+/* NAVIGATION SET UP */
 
 header{
     display: flex;
     justify-content: space-between;
 }
 
-header h3{
+.logo{
     font-size: 50px;
     text-transform: uppercase;
     margin: 30px auto 30px 30px;
 }
 
-nav{
-    
+.main-navigation{
     font-size: 32px;
-    margin: auto 100px auto 50px;
 }
 
-nav ul{
+.main-navigation, ul{
     list-style-type: none;
-    
 }
 
-nav li{
+.main-navigation, li{
     display: inline-block;
-    margin: 20px 10px;
-    padding: 0 20px;
+    margin: auto 30px auto 50px;
     text-decoration: none;
 
 }
-a{
+.underline{
     text-decoration: none;
+    color: rgb(181, 186, 187);
+}
+
+a:visited{
+    color: rgb(181, 186, 187);
 }
 a:hover{
     color: white;
 }
 
 .underline::after{
-
     content: "";
     display: block;
     width: 0;
     height: 10px;
     background:blue;
-    transition: transform 0.3 ease;
 }
 
 .underline:hover::after{
     width: 100%;
-    transition: transform 0.3 ease;
+
 }
 
+/* MAIN CONTENT SET UP */
 
-main{
+.main-content{
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 230px auto;
-    padding: 0;
-
-}
-
-main h1{
-    font-size: 100px;
-    padding: auto 40px;
     color: white;
+    margin: 300px auto;
 }
 
-main h3{
+.small-margin{
+    margin: 5px auto;
     font-size: 50px;
-    padding: 40px 20px;
 }
+
+.my-name{
+    margin: 5px auto;
+    font-size: 100px;
+}
+
 
 
 
