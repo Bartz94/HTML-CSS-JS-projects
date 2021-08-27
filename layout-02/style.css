@@ -3,6 +3,29 @@ html{
 }
 
 body{
-    background-image: url("images/bg-image.jpg");
+    color: rgb(181, 186, 187);
     margin: 0;
+    background-color: black;
+
 }
+
+.header{
+    text-align: center;
+    font-size: 48px;
+   
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    justify-content: space-evenly;
+ 
+}
+
+.grid div{
+    border: 1px solid rgb(181, 186, 187);
+    padding: 15px 15px;
+
+}
+
