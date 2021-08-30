@@ -17,15 +17,20 @@ body{
 
 .grid{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 400px);
     grid-gap: 25px;
-    justify-content: space-evenly;
+    justify-content: center;
  
 }
 
 .grid div{
     border: 1px solid rgb(181, 186, 187);
-    padding: 15px 15px;
+    padding: 10px 15px;
 
+}
+
+.grid div h2{
+    color: rgb(53, 55, 189);
+    font-size: 30px;
 }
 
