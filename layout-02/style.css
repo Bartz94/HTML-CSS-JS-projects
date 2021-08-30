@@ -12,25 +12,26 @@ body{
 .header{
     text-align: center;
     font-size: 48px;
+    margin: 20px;
    
 }
 
 .grid{
     display: grid;
     grid-template-columns: repeat(3, 400px);
+    grid-auto-rows: 340px;
     grid-gap: 25px;
     justify-content: center;
  
 }
 
 .grid div{
-    border: 1px solid rgb(181, 186, 187);
-    padding: 10px 15px;
+    border: 2px solid rgb(181, 186, 187);
+    padding: 30px 15px;
 
 }
 
 .grid div h2{
-    color: rgb(53, 55, 189);
+    color: rgb(34, 123, 240);
     font-size: 30px;
 }
-
