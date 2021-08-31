@@ -1,3 +1,9 @@
-# jfdzr5-projects-Bartz94
+# Project-1
 
-###https://www.behance.net/gallery/75670991/Personal-Portfolio-Template?tracking_source=search_projects_recommended%7Cpersonal%20page%20website
+The first project where I try my best to copy the page layouts from the links given below.
+
+- [Layout 1](https://imgur.com/sFaHtJi) 
+
+- [Layout 2](https://imgur.com/p5wTaY3) 
+
+- [Layout 3]() 
