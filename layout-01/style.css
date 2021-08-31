@@ -15,12 +15,6 @@ header{
     justify-content: space-between;
 }
 
-.logo{
-    font-size: 50px;
-    text-transform: uppercase;
-    margin: 30px auto 30px 30px;
-}
-
 .main-navigation{
     font-size: 32px;
 }
@@ -36,14 +30,33 @@ header{
     font-weight: bold;
 
 }
-.underline{
+a{
+    position: relative;
     text-decoration: none;
     color: rgb(181, 186, 187);
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+}
+a:after{
+    content: "";
+    position: absolute;
+    background-color: #007bff;
+    height: 15px;
+    border-radius: 150px 150px 25px 25px;
+    width: 0;
+    left: 0;
+    bottom: -12px;
+}
+
+
+a:hover:after{
+    width: 100%;
 }
 
 a:visited{
     color: rgb(181, 186, 187);
 }
+
 a:hover{
     color: white;
 }
