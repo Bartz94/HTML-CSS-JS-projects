@@ -1,12 +1,13 @@
 html{
-    font-family: 'Gugi', cursive;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 body{
-    background-image: url("images/bg-image.jpg");
     color: rgb(181, 186, 187);
     margin: 0 auto;
+    background-image: url("images/bg-image.jpg");
 }
+
 /* NAVIGATION SET UP */
 
 header{
@@ -32,6 +33,7 @@ header{
     display: inline-block;
     margin: auto 30px auto 50px;
     text-decoration: none;
+    font-weight: bold;
 
 }
 .underline{
@@ -46,19 +48,6 @@ a:hover{
     color: white;
 }
 
-.underline::after{
-    content: "";
-    display: block;
-    width: 0;
-    height: 10px;
-    background:blue;
-}
-
-.underline:hover::after{
-    width: 100%;
-
-}
-
 /* MAIN CONTENT SET UP */
 
 .main-content{
@@ -69,14 +58,20 @@ a:hover{
     margin: 300px auto;
 }
 
-.small-margin{
-    margin: 5px auto;
-    font-size: 50px;
+.welcome-title{
+    margin: 10px;
+    font-size: 75px;
+    
+}
+
+.welcome-title:first-child{
+    color: rgb(181, 186, 187);
+    
 }
 
 .my-name{
-    margin: 5px auto;
-    font-size: 100px;
+    margin: 10px;
+    font-size: 150px;
 }
 
 
