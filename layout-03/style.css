@@ -9,8 +9,20 @@ body{
 
 }
 
+.about-portrait{
+    display: flex;
+    margin: 0 20px;
+    
+}
+
 .about-main{
     display: flex;
-    margin: 100px 100px;
+    margin: 70px 200px;
 }
+
+.about-introdaction{
+    color: white;
+    font-size: 50px;
+}
+
 
