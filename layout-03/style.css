@@ -8,3 +8,9 @@ body{
     background-color: black;
 
 }
+
+.about-main{
+    display: flex;
+    margin: 100px 100px;
+}
+
