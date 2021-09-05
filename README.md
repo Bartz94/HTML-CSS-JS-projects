@@ -6,4 +6,4 @@ The first project where I try my best to copy the page layouts from the links gi
 
 - [Layout 2](https://imgur.com/p5wTaY3) 
 
-- [Layout 3]() 
+- [Layout 3](https://imgur.com/tfw5nNR) 
