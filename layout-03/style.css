@@ -11,20 +11,20 @@ body{
 
 .about-main{
     display: flex;
-    margin: 100px 500px;
+    margin: 80px 400px 60px 400px;
     line-height: 50px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.2px;
 }
 
 .about-title{
     color: white;
-    font-size: 55px;
+    font-size: 45px;
     line-height: 70px;
     margin: 20px 20px;
 }
 
 .about-description{
-    font-size: 25px;
+    font-size: 20px;
     margin: 20px 20px;
 }
 
