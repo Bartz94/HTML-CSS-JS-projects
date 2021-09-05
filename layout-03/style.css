@@ -9,20 +9,49 @@ body{
 
 }
 
-.about-portrait{
-    display: flex;
-    margin: 0 20px;
-    
-}
-
 .about-main{
     display: flex;
-    margin: 70px 200px;
+    margin: 100px 500px;
+    line-height: 50px;
+    letter-spacing: 0.5px;
 }
 
-.about-introdaction{
+.about-title{
     color: white;
-    font-size: 50px;
+    font-size: 55px;
+    line-height: 70px;
+    margin: 20px 20px;
 }
 
+.about-description{
+    font-size: 25px;
+    margin: 20px 20px;
+}
+
+.about-intro{
+    font-weight: normal;
+    color: white;
+}
+
+.line{
+    margin: auto 20px;
+    color: #007bff;
+    background-color: #007bff;
+    height: 2px;
+}
+
+
+
+.tw{
+    background: url(images/twitter.png) no-repeat center;
+    background-size: 100%;
+}
+
+.social{
+    display: flex;  
+}
+
+.social img{
+    padding: 20px 20px;
+}
 
