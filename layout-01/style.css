@@ -16,7 +16,7 @@ header{
 }
 
 .main-navigation{
-    font-size: 32px;
+    font-size: 25px;
 }
 
 .main-navigation, ul{
@@ -25,7 +25,7 @@ header{
 
 .main-navigation, li{
     display: inline-block;
-    margin: auto 30px auto 50px;
+    margin: auto 15px auto;
     text-decoration: none;
     font-weight: bold;
 
@@ -41,7 +41,7 @@ a.underline:after{
     content: "";
     position: absolute;
     background-color: #007bff;
-    height: 15px;
+    height: 10px;
     border-radius: 150px 150px 25px 25px;
     width: 0;
     left: 0;
@@ -67,13 +67,14 @@ a.underline:hover{
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin: 150px auto;
     color: white;
-    margin: 300px auto;
+    
 }
 
 .welcome-title{
     margin: 10px;
-    font-size: 75px;
+    font-size: 60px;
     
 }
 
@@ -84,7 +85,7 @@ a.underline:hover{
 
 .my-name{
     margin: 10px;
-    font-size: 150px;
+    font-size: 100px;
 }
 
 

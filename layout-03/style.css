@@ -5,13 +5,13 @@ html{
 body{
     color: white;
     margin: 0;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.849);
 
 }
 
 .about-main{
     display: flex;
-    margin: 80px auto 60px;
+    margin: 150px auto 60px;
     line-height: 50px;
     letter-spacing: 0.2px;
     max-width: 1400px;
@@ -27,7 +27,7 @@ body{
 .about-description{
     color: rgb(181, 186, 187);
     font-size: 20px;
-    margin: 20px 20px;
+    margin: 0px 20px;
 }
 
 .about-intro{
@@ -35,12 +35,28 @@ body{
     font-size: 25px;
 }
 
-.social{
-    display: flex;  
-}
 
 .social img{
-    margin: auto auto;
+    margin: 50px auto;
     padding: 20px 20px;
 }
 
+.first-img{
+   position: absolute;
+  
+}
+
+.second-img{
+    position: relative;
+    left: -1px;
+    bottom: 100px;
+    z-index: -2;
+
+}
+
+.third-img{
+ position: absolute;
+ top: -300px;
+ left: 260px;
+ z-index: -2;
+}

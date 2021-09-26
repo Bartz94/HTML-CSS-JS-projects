@@ -1,0 +1,287 @@
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+.main-navigation{
+    height: 10vh;
+    width: 100vw;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+   
+}
+
+.main-navigation ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0 250px;
+    font-size: 20px;
+    text-decoration: none solid rgb(26, 26, 26);
+}
+
+.main-navigation li a{
+    text-decoration: none;
+    margin-left: 60px;
+    color: black;
+}
+
+.logo{
+    margin-right: 800px;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.welcome-layout{
+    height: 90vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/bg-image3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.welcome-layout h1{
+    font-size: 100px;
+    font-weight: 400;
+}
+
+.welcome-layout p{
+    font-size: 26px;
+    margin: -60px auto 50px;
+}
+
+.home-btn1{
+    padding: 20px 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 450;
+    color: #4D2C57;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+.home-btn1:hover{
+    background-color: rgb(240,240,240);
+}
+/* BESTSELLERS SECTION */
+
+.bestsellers{
+    height: 90vh;
+    color: #4D2C57;
+}
+
+.bestsellers h1{
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    margin: 80px auto;
+}
+
+.buy-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.buy-item img{
+    height: 300px;
+    width: 300px;
+    max-width: 100%;
+}
+
+.buy-item h2,
+.buy-item p{
+    text-align: center;
+}
+
+.buy-item p{
+    margin-bottom: 100px;
+}
+
+.bestsellers:nth-child(3){
+    display: block;
+    text-align: center;
+}
+.bestsellers .home-btn2{
+    padding: 20px 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 450;
+    color: #4D2C57;
+    border: 2px solid #4D2C57;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+.bestsellers .home-btn2:hover{
+    background-color: #4D2C57;
+    color: white;
+}
+/* SHOP NOW SECTION */
+.shop-now{
+    height: 80vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/bg-image4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.shop-now h1{
+    font-size: 100px;
+    font-weight: 400;
+}
+
+.shop-now p{
+    font-size: 26px;
+    margin: -60px auto 50px;
+}
+/*ABOUT SECTION*/
+
+.information{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 150px;
+    color: #4D2C57;
+}
+
+.about-me img,
+.sustain img{
+    height: 400px;
+    width: 600px;
+    max-width: 100%;
+}
+
+.about-me h2,
+.sustain h2{
+    font-size: 40px;
+}
+
+.about-me p,
+.sustain p{
+    font-size: 20px;
+    font-weight: 400;
+    margin: -20px auto 40px;
+}
+
+.about-me .home-btn2,
+.sustain .home-btn2{
+    padding: 13px 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 450;
+    color: #4D2C57;
+    border: 2px solid #4D2C57;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+.about-me .home-btn2:hover,
+.sustain .home-btn2:hover{
+    background-color: #4D2C57;
+    color: white;
+}
+
+/* NEWSLETTER SECTION */
+.newsletter{
+    height: 70vh;
+    background-image: url(images/bg-image5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.newsletter-wrapper{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter-wrapper h1{
+    font-size: 60px;
+}
+
+.newsletter-wrapper input{
+    width: 350px;
+    padding: 15px;
+    border: none;
+    background-color: rgba(255, 255, 255, .7);
+}
+
+/* IG SECTION */
+.instagram{
+    height: 65vh;
+    color: #4D2C57;
+}
+
+.instagram h1{
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    margin: 80px auto;
+}
+
+.ig-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.go-to-ig{
+    display: block;
+    font-size: 25px;
+    text-align: center;
+    margin: 20px;
+    color: #4D2C57;
+}
+
+/* FOOTER SECTION */
+footer{
+    height: 25vh;
+    background-color: #F6F7F6;
+    display: flex;
+    color: black;
+    justify-content: space-evenly;
+}
+
+.footer-social,
+.footer-policy{
+    flex-direction: column;
+    margin: auto 300px;
+}
+
+.footer-social p{
+    font-size: 30px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.social-link{
+    padding-right: 25px;
+}
+.policy p {
+    padding-left: 205px;
+}
+
+.policy-link{
+    font-size: 18px;
+    color: black;
+    padding-right: 20px;
+}
+
