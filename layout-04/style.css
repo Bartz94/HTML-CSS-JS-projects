@@ -284,6 +284,7 @@ footer{
 }
 
 @media (max-width: 1060px) {
+    /* WELCOME LAYOUT */
     .main-navigation ul{
         font-size: 1em;
     }
@@ -302,6 +303,11 @@ footer{
     
     .welcome-layout p{
         font-size: 1.6em;
+    }
+
+    /* BESTSELLER LAYOUT */
+    .bestsellers h1{
+        font-size: 2em;
     }
 }
 
