@@ -307,7 +307,17 @@ footer{
 
     /* BESTSELLER LAYOUT */
     .bestsellers h1{
-        font-size: 2em;
+        font-size: 2.5em;
+        margin: 30px auto;
+    }
+
+    .buy-item img{
+        height: 250px;
+        width: 250px;
+        max-width: 100%;
+    }
+    .buy-item p{
+        margin-bottom: 50px;
     }
 }
 
@@ -318,11 +328,11 @@ footer{
     }
     
     .main-navigation li a{
-        margin-left: 1em;
+        margin-left: 1.8em;
     }
 
     .logo{
-        font-size: 2em;
+        font-size: 2em;;
     }
     
     .welcome-layout h1{
@@ -337,4 +347,9 @@ footer{
     .home-btn1{
         padding: 10px 30px;
     }
+    /* BESTSELLER LAYOUT */
+    .buy-item p{
+        margin-bottom: 25px;
+    }
+    
 }
