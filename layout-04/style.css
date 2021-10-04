@@ -208,7 +208,7 @@ body{
 }
 
 .newsletter-wrapper{
-    height: 70%;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -228,7 +228,7 @@ body{
 
 /* IG SECTION */
 .instagram{
-    height: 65vh;
+    height: 65%;
     color: #4D2C57;
 }
 
@@ -243,6 +243,7 @@ body{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    flex-basis: 3;
     gap: 25px;
 }
 
@@ -256,36 +257,23 @@ body{
 
 /* FOOTER SECTION */
 footer{
-    height: 25vh;
+    height: 200px;
     background-color: #F6F7F6;
     display: flex;
+    flex-wrap: wrap;
     color: black;
-    justify-content: space-evenly;
-}
-
-.footer-social,
-.footer-policy{
-    flex-direction: column;
-    margin: auto 300px;
+    justify-content: space-around;
+    align-content: center;
 }
 
 .footer-social p{
     font-size: 30px;
     font-weight: 900;
-    margin: 0;
-}
-
-.social-link{
-    padding-right: 25px;
-}
-.policy p {
-    padding-left: 205px;
 }
 
 .policy-link{
     font-size: 18px;
     color: black;
-    padding-right: 20px;
 }
 
 @media (max-width: 1060px) {
@@ -412,6 +400,7 @@ footer{
     .shop-now p{
         font-size: 1em;
     }
+    
     /* NEWSLETTER SECTION */
     .newsletter-wrapper h1{
         font-size: 3em;
@@ -420,5 +409,34 @@ footer{
     
     .newsletter-wrapper input{
         width: 200px;
+    }
+
+    /* IG SECTION */
+    .ig-img-1 img,
+    .ig-img-2 img,
+    .ig-img-3 img{
+        height: 250px;
+        width: 250px;
+
+    }
+    /* FOOTER SECTION */
+    footer{
+        background-color: #F6F7F6;
+        display: flex;
+        color: black;
+        align-self: center;
+    }
+
+    .footer-social,
+    .footer-policy{
+        flex-direction: column;
+    }
+
+    .footer-social p{
+        text-align: center;
+    }
+
+    .policy p {
+        text-align: center;
     }
 }
