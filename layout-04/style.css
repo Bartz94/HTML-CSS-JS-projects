@@ -125,7 +125,7 @@ body{
 }
 /* SHOP NOW SECTION */
 .shop-now{
-    height: 50em;
+    height: 80vh;
     color: white;
     display: flex;
     flex-direction: column;
@@ -151,7 +151,7 @@ body{
 /*ABOUT SECTION*/
 
 .information{
-    height: 80vh;
+    height: 80%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -200,15 +200,15 @@ body{
 
 /* NEWSLETTER SECTION */
 .newsletter{
-    height: 70vh;
     background-image: url(images/bg-image5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
+    margin-top: 100px;
 }
 
 .newsletter-wrapper{
-    height: 70vh;
+    height: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -288,10 +288,6 @@ footer{
     padding-right: 20px;
 }
 
-@media (max-width: 1285px){
-
-}
-
 @media (max-width: 1060px) {
     /* WELCOME SECTION */
     .main-navigation ul{
@@ -325,9 +321,11 @@ footer{
         width: 250px;
         max-width: 100%;
     }
+
     .buy-item p{
         margin-bottom: 50px;
     }
+
     /* SHOP NOW SECTION */
     .shop-now h1{
         font-size: 4em;
@@ -335,6 +333,42 @@ footer{
     
     .shop-now p{
         font-size: 1.6em;
+    }
+    
+    /*ABOUT SECTION*/
+    .about-me,
+    .sustain{
+        text-align: center;
+    }
+
+    .about-me img,
+    .sustain img{
+        height: 250px;
+        width: 400px;
+    }
+
+    .about-me h2,
+    .sustain h2{
+        font-size: 30px;
+    }
+
+    .about-me p,
+    .sustain p{
+        font-size: 15px;
+    }
+
+    .about-me .home-btn2,
+    .sustain .home-btn2{
+        font-size: 15px;
+    }
+
+    /* NEWSLETTER SECTION */
+    .newsletter-wrapper h1{
+        text-align: center;
+    }
+    
+    .newsletter-wrapper input{
+        width: 200px;
     }
 }
 
@@ -360,44 +394,31 @@ footer{
         font-size: 1em;
         margin-top: -22px;
     }
-    
+
     .home-btn1{
         padding: 10px 30px;
     }
+
     /* BESTSELLER LAYOUT */
     .buy-item p{
         margin-bottom: 25px;
     }
+
     /* SHOP NOW SECTION */
     .shop-now h1{
         font-size: 3em;
     }
-    
+
     .shop-now p{
         font-size: 1em;
     }
-    /*ABOUT SECTION*/
-    .about-me,
-    .sustain{
+    /* NEWSLETTER SECTION */
+    .newsletter-wrapper h1{
+        font-size: 3em;
         text-align: center;
     }
-    .about-me img,
-    .sustain img{
-        height: 250px;
-        width: 400px;
-    }
-    .about-me h2,
-    .sustain h2{
-        font-size: 30px;
-    }
-
-    .about-me p,
-    .sustain p{
-        font-size: 15px;
-    }
-
-    .about-me .home-btn2,
-    .sustain .home-btn2{
-        margin: auto;
+    
+    .newsletter-wrapper input{
+        width: 200px;
     }
 }
