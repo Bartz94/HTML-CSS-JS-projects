@@ -1,4 +1,4 @@
-# Project-1
+# Project 1
 
 The first project where I try my best to copy the page layouts from the links given below.
 
@@ -9,3 +9,10 @@ The first project where I try my best to copy the page layouts from the links gi
 - [Layout 3](https://imgur.com/tfw5nNR) 
 
 - [Layout 4](https://zyro.com/preview/mina?returnPath=%2Ftemplates#desktop) 
+
+# Project 2
+
+Second project, coding in JS.
+
+- [Random Color](https://github.com/infoshareacademy/jfdzr5-projects-Bartz94/tree/main/project-2/random-color) 
+
