@@ -8,16 +8,16 @@ function init() {
     hexColorButton.addEventListener('click', () => {
         const randomColor = '#' + Math.random().toString(16).slice(2, 8);
         body.style.backgroundColor = randomColor;
-        colorName.innerText = 'Code: ' + randomColor
+        colorName.innerText = randomColor;
     })
     rgbColorButton.addEventListener('click', () => {
         const randomColor = '#' + Math.random().toString(16).slice(2, 8);
         body.style.backgroundColor = randomColor;
-        colorName.innerText = 'Code: ' + body.style.backgroundColor
+        colorName.innerText = body.style.backgroundColor;
     })
 
     copyButton.addEventListener('click', function copy() {
-        var temp = document.createElement("textarea");
+        const temp = document.createElement("textarea");
         document.body.appendChild(temp);
         temp.value = colorName.innerText
         temp.select();
