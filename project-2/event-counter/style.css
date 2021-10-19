@@ -1,0 +1,49 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300;1,600&display=swap');
+
+body {
+    margin: 0;
+    font-family: poppins, Arial, Helvetica, sans-serif;
+    color: white;
+    background-image: url(./bg-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+
+}
+
+.event_title{
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+    letter-spacing: .8rem;
+}
+.counter_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.time_box {
+    margin: 10px;
+    letter-spacing: .5rem;
+    border: 5px solid white;
+    border-radius: 25px;
+    height: 15rem;
+    width: 14rem;
+}
+
+.counter_number {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+.counter_text {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 0;
+    font-weight: bold;
+}
