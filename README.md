@@ -15,4 +15,5 @@ The first project where I try my best to copy the page layouts from the links gi
 Second project, coding in JS.
 
 - [Random Color](https://github.com/infoshareacademy/jfdzr5-projects-Bartz94/tree/main/project-2/random-color) 
+- [Event Counter](https://github.com/infoshareacademy/jfdzr5-projects-Bartz94/tree/main/project-2/event-counter) 
 
