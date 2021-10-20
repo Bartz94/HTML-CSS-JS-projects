@@ -1,6 +1,6 @@
 function init() {
     setInterval(function () {
-        const dateGoal = new Date("Dec 24, 2021").getTime();
+        const dateGoal = new Date("Dec 25, 2021").getTime();
         let dateCurrent = new Date().getTime();
         let dateDifference = dateGoal - dateCurrent;
 
@@ -21,6 +21,7 @@ function init() {
         minuteText.textContent = minuteDate;
         secondText.textContent = secondDate;
 
+
         if (dateDifference < 0) {
             clearInterval();
             dayText.textContent = 'FINISH';
@@ -28,12 +29,27 @@ function init() {
             minuteText.textContent = 'FINISH';
             secondText.textContent = 'FINISH';
         };
-    }, 1000)
+    }, 1000);
 
+    // setInterval(moreSnowflakes, 500)
 
+    function moreSnowflakes() {
+        const windowWidth = window.innerWidth - 50;
+        newSnowflake = document.createElement('p');
+        newSnowflake.classList.add('snowflake');
+        newSnowflake.textContent = '❆'
+        newSnowflake.style.left = Math.random() * windowWidth + 'px';
+        newSnowflake.style.animationDuration = Math.random() * 3 + 2 + 's';
+        newSnowflake.style.opacity = Math.random();
+        newSnowflake.style.fontSize = Math.random() * 30 + 10 + 'px';
 
+        document.body.prepend(newSnowflake);
 
-
+        function removeSnowflake() {
+            newSnowflake.remove;
+        }
+        setTimeout(removeSnowflake, 5000);
+    };
 
 };
 

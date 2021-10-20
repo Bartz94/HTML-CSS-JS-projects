@@ -1,6 +1,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300;1,600&display=swap');
 
+
+.snowflake{
+    animation: fall linear forwards;
+    color: white;
+    position: absolute;
+    top: -20px;
+    font-style: none;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(105vh)
+    }
+}
 body {
     margin: 0;
     font-family: poppins, Arial, Helvetica, sans-serif;
@@ -20,7 +34,7 @@ body {
     font-size: 4rem;
     margin-top: 10rem;
     margin-bottom: 2rem;
-    padding: 1rem;
+    padding:.5rem;
     letter-spacing: .8rem;
     background-color: white;
     border-radius: 50px;
@@ -56,3 +70,31 @@ body {
     margin-top: 0;
     font-weight: bold;
 }
+
+@media only screen and (max-width: 668px) {
+    .event_title{
+        font-size: 2rem;
+        margin-top: 5rem;
+    }
+    .time_box {
+        height: 11rem;
+        width: 11rem;
+    }
+    
+    .counter_number {
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 2rem;
+        margin-top: 2.5rem;
+    }
+    
+    .counter_text {
+        font-size: 1.2rem;
+    }
+  }
+
+  @media only screen and (max-width: 410px) {
+    .event_title{
+        font-size: 1.2rem;
+    }
+  }
