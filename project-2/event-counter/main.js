@@ -9,8 +9,6 @@ function init() {
         const minuteText = document.querySelector('#minute');
         const secondText = document.querySelector('#second');
 
-
-
         let dayDate = Math.floor(dateDifference / (1000 * 60 * 60 * 24));
         let hourDate = Math.floor((dateDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         let minuteDate = Math.floor((dateDifference % (1000 * 60 * 60)) / (1000 * 60));
@@ -21,7 +19,6 @@ function init() {
         minuteText.textContent = minuteDate;
         secondText.textContent = secondDate;
 
-
         if (dateDifference < 0) {
             clearInterval();
             dayText.textContent = 'FINISH';
@@ -31,7 +28,7 @@ function init() {
         };
     }, 1000);
 
-    // setInterval(moreSnowflakes, 500)
+    setInterval(moreSnowflakes, 500)
 
     function moreSnowflakes() {
         const windowWidth = window.innerWidth - 50;
