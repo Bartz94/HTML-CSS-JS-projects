@@ -1,6 +1,6 @@
 function init() {
     const vowelBtn = document.querySelector('button');
-    const vowelInput = document.querySelector('input');
+    const vowelInput = document.querySelector('textarea');
     const vowel = document.querySelector('#vowel');
 
     vowelBtn.addEventListener('click', () => {
