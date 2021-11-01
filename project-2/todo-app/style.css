@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;900&display=swap');
+
+body{
+    background: linear-gradient(to right, #ece9e6, hsla(0, 0%, 100%, 0.5));
+    font-family: roboto, Arial, Helvetica, sans-serif;
+    color: purple;
+
+}
+
+.page_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin: 20px;
+}
+
+.title span{
+    color: red;
+}
+
+.adding_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 17rem;
+    margin-bottom: 15px;
+}
+
+.adding_container input{
+    font-size: 1.2rem;
+    font-family: roboto, Arial, Helvetica, sans-serif;
+    color: purple;
+}
+
+.adding_container input:focus{
+    outline: none;
+}
+.fas{
+    cursor: pointer;
+}
+.fa-plus-square{
+    font-size: 2rem;
+    background-color: transparent;
+}
+
+.task_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 16rem;
+    background-color: white;
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.fa-times-circle{
+    color: red;
+    font-size: 1.5rem;
+}
+
+.fa-check{
+    color: green;
+    font-size: 1.5rem;
+}
