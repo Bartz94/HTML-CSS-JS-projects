@@ -5,25 +5,20 @@ function init() {
 
     vowelBtn.addEventListener('click', () => {
         sentance = vowelInput.value;
-        if (typeof sentance === 'string') {
-            let vowelsCount = 0;
-            let string = sentance.toString();
+        let vowelsCount = 0;
+        let string = sentance.toString();
 
-            for (let i = 0; i <= string.length - 1; i++) {
-                if (string.charAt(i) == "a" || string.charAt(i) == "ą" || string.charAt(i) == "e" || string.charAt(i) == "ę" ||
-                    string.charAt(i) == "i" || string.charAt(i) == "o" || string.charAt(i) == "u" || string.charAt(i) == "ó"
-                    || string.charAt(i) == "y") {
-                    vowelsCount += 1;
-                }
+        for (let i = 0; i <= string.length; i++) {
+            if (string.charAt(i) == "a" || string.charAt(i) == "A" || string.charAt(i) == "ą" || string.charAt(i) == "Ą"
+                || string.charAt(i) == "e" || string.charAt(i) == "E" || string.charAt(i) == "ę" || string.charAt(i) == "Ę"
+                || string.charAt(i) == "i" || string.charAt(i) == "I" || string.charAt(i) == "o" || string.charAt(i) == "O"
+                || string.charAt(i) == "u" || string.charAt(i) == "U" || string.charAt(i) == "ó" || string.charAt(i) == "Ó"
+                || string.charAt(i) == "y" || string.charAt(i) == "Y") {
+                vowelsCount++;
             }
-            vowel.innerHTML = vowelsCount;
         }
-        else {
-            vowel.innerHTML = 'That is not a sentance';
-        }
-
+        vowel.innerHTML = vowelsCount;
     })
-
 };
 
 window.onload = init;
