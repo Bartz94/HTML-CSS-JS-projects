@@ -3,16 +3,17 @@
 
 
 .snowflake{
-    animation: fall linear forwards;
-    color: white;
-    position: absolute;
-    top: -20px;
-    font-style: none;
+    color: #fff;
+	position: absolute;
+	top: -30px;
+	animation: fall linear forwards;
+    font-style: normal;
 }
 
 @keyframes fall {
     to {
-        transform: translateY(100vh)
+        transform: translateX(100px);
+        transform: translateY(105vh);
     }
 }
 body {
@@ -23,6 +24,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     font-weight: bold;
+    overflow: hidden;
 }
 
 .title_container{
