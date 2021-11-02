@@ -12,25 +12,30 @@
 </head>
 
 <body>
-    <div class="page_container">
-        <h1 class="title">Todo<span>list</span></h1>
-        <div class="adding_container">
-            <input type="text" name="todo" id="">
+    <div class="wrapper">
+        <div class="header">
+            <h1>TodoApp</h1>
+            <input type="text" id="input" placeholder="Add a task...">
             <i class="fas fa-plus-square"></i>
         </div>
-
-        <div class="task_container">
-            <p class="task">Kupic mleko</p>
-            <i class="fas fa-check"></i>
-            <i class="fas fa-times-circle"></i>
-
-
-        </div>
-
-
-
+        <ul class="list">
+            <li class="item">
+                <i class="far fa-square"></i>
+                <p class="text">Chupki pupki</p>
+                <i class="fas fa-ban"></i>
+            </li>
+            <li class="item">
+                <i class="fas fa-check-square"></i>
+                <p class="text linethrough">Chupki pupki</p>
+                <i class="fas fa-ban"></i>
+            </li>
+            <li class="item">
+                <i class="far fa-square"></i>
+                <p class="text"></p>
+                <i class="fas fa-ban"></i>
+            </li>
+        </ul>
     </div>
-
 </body>
 
 </html>

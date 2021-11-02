@@ -1,71 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;900&display=swap');
+.linethrough{
+    text-decoration: line-through;
+    color: gray;
+}
 
 body{
-    background: linear-gradient(to right, #ece9e6, hsla(0, 0%, 100%, 0.5));
-    font-family: roboto, Arial, Helvetica, sans-serif;
-    color: purple;
-
+    margin: 50px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: gray;
 }
 
-.page_container{
+.wrapper{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    background-color: rgb(218, 186, 186);
     align-items: center;
+    width: 400px;
+    height: 650px;
+    border-radius: 30px 30px 15px 15px;
 }
 
-.title{
-    font-size: 3.5rem;
-    font-weight: 400;
-    margin: 20px;
+.header{
+    text-align: center;
 }
 
-.title span{
-    color: red;
+.header h1{
+    font-size: 4rem;
+    margin: 1.5rem;
 }
 
-.adding_container{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 17rem;
-    margin-bottom: 15px;
+.header input{
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    position: relative;
+    margin-left: -30px;
 }
 
-.adding_container input{
-    font-size: 1.2rem;
-    font-family: roboto, Arial, Helvetica, sans-serif;
-    color: purple;
-}
-
-.adding_container input:focus{
-    outline: none;
-}
-.fas{
-    cursor: pointer;
-}
 .fa-plus-square{
-    font-size: 2rem;
-    background-color: transparent;
+    position: absolute;
+    font-size: 2.1rem;
 }
 
-.task_container{
+.list{
+    list-style-type: none;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 16rem;
-    background-color: white;
-    border-bottom: 1px solid black;
-    border-radius: 10px;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-bottom: 2px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    width: 310px;
+}
+
+.item p {
+    font-size: 1.3rem;
+    margin: 10px;
+}
+
+.item .fas, .far{
+    font-size: 1.5rem;
+    align-self: center;
     margin: 5px;
 }
-
-.fa-times-circle{
-    color: red;
-    font-size: 1.5rem;
+.fa-check-square{
+    color: green;
 }
 
-.fa-check{
-    color: green;
-    font-size: 1.5rem;
+.fa-ban{
+    color: red;
+}
+
+.fas, .far{
+    cursor: pointer;
 }
