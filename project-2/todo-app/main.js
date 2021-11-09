@@ -2,6 +2,12 @@ function init() {
     const todoForm = document.querySelector('#form');
     const todoInput = document.querySelector('.todo_input');
     const todoList = document.querySelector('.todo_list');
+    const NumberOfTasks = document.querySelector('#num_of_task')
+
+    const localStoragedTasks = JSON.parse(localStorage.getItem('tasks'));
+    NumberOfTasks.innerText = localStoragedTasks.length;
+
+
 
     if (localStoragedTasks) {
         localStoragedTasks.forEach(task => {
@@ -46,13 +52,12 @@ function init() {
             todoInput.value = '';
             updateLocalStorage();
         };
-
     };
 };
 
 function updateLocalStorage() {
-    const arrayOfTask = [];
     const taskElements = document.querySelectorAll('li');
+    const arrayOfTask = [];
 
     taskElements.forEach((taskElement) => {
         arrayOfTask.push({
