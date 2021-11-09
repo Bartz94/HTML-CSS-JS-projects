@@ -1,51 +1,46 @@
 function init() {
-    const todoButton = document.querySelector('.todo_button');
+    const todoForm = document.querySelector('#form');
     const todoInput = document.querySelector('.todo_input');
     const todoList = document.querySelector('.todo_list');
 
     todoInput.focus();
 
-    todoButton.addEventListener('click', createNewItem)
+    todoForm.addEventListener('submit', createNewItem)
 
     function createNewItem(event) {
-        if (todoInput.value !== '') {
-            event.preventDefault();
+        event.preventDefault();
 
-            const newItem = document.createElement('li');
-            newItem.innerText = todoInput.value;
+        const newItem = document.createElement('li');
+        newItem.innerText = todoInput.value;
 
-            newItem.addEventListener('click', () => {
-                newItem.classList.toggle('completed')
-            });
-
-            newItem.addEventListener('contextmenu', (event) => {
-                event.preventDefault();
-                newItem.remove();
-            });
-
-            todoList.appendChild(newItem);
-            todoInput.value = '';
+        newItem.addEventListener('click', () => {
+            newItem.classList.toggle('completed')
             updateLocalStorage();
-        }
-        else {
-            event.preventDefault();
-            return;
-        };
-    };
-
-    function updateLocalStorage() {
-        const taskElements = document.querySelectorAll('li');
-        const arrayOfTask = [];
-
-        taskElements.forEach((taskElement) => {
-            arrayOfTask.push({
-                text: taskElement.innerText,
-                completed: taskElement.classList.contains('completed'),
-            });
         });
 
-        localStorage.setItem('ListOf', JSON.stringify(arrayOfTask));
-        console.log(arrayOfTask)
-    }
+        newItem.addEventListener('contextmenu', (event) => {
+            event.preventDefault();
+            newItem.remove();
+        });
+
+        todoList.appendChild(newItem);
+        todoInput.value = '';
+        updateLocalStorage();
+    };
+};
+
+function updateLocalStorage() {
+    const taskElements = document.querySelectorAll('li');
+    const arrayOfTask = [];
+
+    taskElements.forEach((taskElement) => {
+        arrayOfTask.push({
+            text: taskElement.innerText,
+            completed: taskElement.classList.contains('completed'),
+        });
+    });
+
+    localStorage.setItem('Tasks', JSON.stringify(arrayOfTask));
+    console.log(arrayOfTask)
 };
 window.onload = init;
