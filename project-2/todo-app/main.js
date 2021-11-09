@@ -5,7 +5,7 @@ function init() {
     const NumberOfTasks = document.querySelector('#num_of_task')
 
     const localStoragedTasks = JSON.parse(localStorage.getItem('tasks'));
-    NumberOfTasks.innerText = localStoragedTasks.length;
+    // NumberOfTasks.innerText = localStoragedTasks.length;
 
 
 
@@ -32,6 +32,7 @@ function init() {
         if (taskText) {
             const newItem = document.createElement('li');
             if (task && task.completed) {
+
                 newItem.classList.add('completed');
             };
 
@@ -47,7 +48,7 @@ function init() {
                 newItem.remove();
                 updateLocalStorage();
             });
-
+            newItem.classList.add('todo_item');
             todoList.appendChild(newItem);
             todoInput.value = '';
             updateLocalStorage();
