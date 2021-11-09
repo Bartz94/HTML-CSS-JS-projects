@@ -13,28 +13,16 @@
 
 <body>
     <div class="wrapper">
-        <div class="header">
-            <h1>TodoApp</h1>
-            <input type="text" id="input" placeholder="Add a task...">
-            <i class="fas fa-plus-square"></i>
-        </div>
-        <ul class="list">
-            <li class="item">
-                <i class="far fa-square"></i>
-                <p class="text">Chupki pupki</p>
-                <i class="fas fa-ban"></i>
-            </li>
-            <li class="item">
-                <i class="fas fa-check-square"></i>
-                <p class="text linethrough">Chupki pupki</p>
-                <i class="fas fa-ban"></i>
-            </li>
-            <li class="item">
-                <i class="far fa-square"></i>
-                <p class="text"></p>
-                <i class="fas fa-ban"></i>
-            </li>
+        <header>
+            <h1>Hello My TodoList</h1>
+            <h2>Remainng task:<span>0</span></h2>
+        </header>
+        <ul class="todo_list">
         </ul>
+        <form>
+            <input class="todo_input" type="text">
+            <button class="todo_button" type="submit">CLICK</button>
+        </form>
     </div>
 </body>
 
