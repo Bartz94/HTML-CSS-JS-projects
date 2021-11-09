@@ -32,5 +32,20 @@ function init() {
             return;
         };
     };
+
+    function updateLocalStorage() {
+        const taskElements = document.querySelectorAll('li');
+        const arrayOfTask = [];
+
+        taskElements.forEach((taskElement) => {
+            arrayOfTask.push({
+                text: taskElement.innerText,
+                completed: taskElement.classList.contains('completed'),
+            });
+        });
+
+        localStorage.setItem('ListOf', JSON.stringify(arrayOfTask));
+        console.log(arrayOfTask)
+    }
 };
 window.onload = init;
