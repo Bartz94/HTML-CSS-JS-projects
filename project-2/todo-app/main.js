@@ -2,11 +2,10 @@ function init() {
     const todoForm = document.querySelector('#form');
     const todoInput = document.querySelector('.todo_input');
     const todoList = document.querySelector('.todo_list');
-    const NumberOfTasks = document.querySelector('#num_of_task')
+    const NumberOfTasks = document.querySelector('#num_of_task');
 
     const localStoragedTasks = JSON.parse(localStorage.getItem('tasks'));
-    // NumberOfTasks.innerText = localStoragedTasks.length;
-
+    NumberOfTasks.innerText = localStoragedTasks.length;
 
 
     if (localStoragedTasks) {
@@ -39,7 +38,10 @@ function init() {
             newItem.innerText = taskText;
 
             newItem.addEventListener('click', () => {
-                newItem.classList.toggle('completed')
+                const superToggle = ['completed', 'fa-check-square'].map(v => newItem.classList.toggle(v));
+
+                newItem.classList.remove('fa-square');
+                newItem.classList.toggle(superToggle);
                 updateLocalStorage();
             });
 
@@ -48,8 +50,8 @@ function init() {
                 newItem.remove();
                 updateLocalStorage();
             });
-            newItem.classList.add('todo_item');
-            todoList.appendChild(newItem);
+            newItem.classList.add('todo_item', 'far', 'fa-square');
+            todoList.prepend(newItem);
             todoInput.value = '';
             updateLocalStorage();
         };
