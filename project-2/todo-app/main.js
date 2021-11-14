@@ -5,7 +5,7 @@ function init() {
     const NumberOfTasks = document.querySelector('#num_of_task');
 
     const localStoragedTasks = JSON.parse(localStorage.getItem('tasks'));
-    NumberOfTasks.innerText = localStoragedTasks.length;
+    // NumberOfTasks.innerText = localStoragedTasks.length;
 
 
     if (localStoragedTasks) {
