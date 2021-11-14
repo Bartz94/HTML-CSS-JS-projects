@@ -38,10 +38,7 @@ function init() {
             newItem.innerText = taskText;
 
             newItem.addEventListener('click', () => {
-                const superToggle = ['completed', 'fa-check-square'].map(v => newItem.classList.toggle(v));
-
-                newItem.classList.remove('fa-square');
-                newItem.classList.toggle(superToggle);
+                newItem.classList.toggle('completed');
                 updateLocalStorage();
             });
 
@@ -50,7 +47,7 @@ function init() {
                 newItem.remove();
                 updateLocalStorage();
             });
-            newItem.classList.add('todo_item', 'far', 'fa-square');
+            newItem.classList.add('todo_item');
             todoList.prepend(newItem);
             todoInput.value = '';
             updateLocalStorage();
