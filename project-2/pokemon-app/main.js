@@ -12,6 +12,7 @@ const getPokemon = async id => {
     const res = await fetch(link);
     const pokemon = await res.json();
     createPokemonBox(pokemon)
+    console.log(pokemon)
 }
 
 function createPokemonBox(pokemon) {
@@ -20,7 +21,8 @@ function createPokemonBox(pokemon) {
 
 
     const pokeBoxInnerHTML = `
-    ${name}
+     <img src="${pokemon.sprites.front_default}" width="110" height="110">
+    #${pokemon.id} ${name}
     `;
 
     pokemonBox.innerHTML = pokeBoxInnerHTML;
