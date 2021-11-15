@@ -49,9 +49,9 @@ function createPokemonBox(pokemon) {
     <p class="pokemon_type">${typeName}</p>
     
     <div class="pokemon_stats">
-        <p class="hp">HP ${pokemon.stats[0].base_stat}</p>
-        <p class="atack">ATK ${pokemon.stats[1].base_stat}</p>
-        <p class="defense">DEF ${pokemon.stats[2].base_stat}</p>
+        <p class="hp">HP${pokemon.stats[0].base_stat}</p>
+        <p class="atack">ATK${pokemon.stats[1].base_stat}</p>
+        <p class="defense">DEF${pokemon.stats[2].base_stat}</p>
     </div>
     `;
 
