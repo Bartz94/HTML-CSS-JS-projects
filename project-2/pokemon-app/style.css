@@ -34,9 +34,30 @@ body{
 .pokemon_image{
     background-color: #eee;
     border-radius: 50%; 
-    padding: 5px;
+    margin-top: -10px;
 }
 
 .poke_name{
-    margin-top: -30px;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 15px;
 }
+
+.pokemon_type{
+    background-color: #eee;
+    border-radius: 50px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.pokemon_stats{
+    display: flex;
+}
+
+.hp, .atack, .defense{
+    background-color: #fff;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 52px;
+}
+
