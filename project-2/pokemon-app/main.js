@@ -21,11 +21,12 @@ function createPokemonBox(pokemon) {
 
 
     const pokeBoxInnerHTML = `
-     <img src="${pokemon.sprites.front_default}" width="110" height="110">
-    #${pokemon.id} ${name}
+    <p class="poke_name">#${pokemon.id} ${name}</p>
+     <img class ="pokemon_image" src="${pokemon.sprites.other["official-artwork"].front_default}" width="200" height="200">
     `;
 
     pokemonBox.innerHTML = pokeBoxInnerHTML;
+    pokemonBox.classList.add('poke_card')
     pokeBoxContainer.appendChild(pokemonBox)
 }
 
