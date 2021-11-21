@@ -1,9 +1,12 @@
-/* @import url(//db.onlinewebfonts.com/c/f4d1593471d222ddebd973210265762a?family=Pokemon); */
+@import url(//db.onlinewebfonts.com/c/f4d1593471d222ddebd973210265762a?family=Pokemon);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap');
 
 body{
     margin: 0;
     padding: 0;
-    font-family: Pokemon, Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom right, #0D2952, #305792);
+    background-color: #0D2952;
+    font-family: pokemon, roboto, Arial;
 }
 
 .header{
@@ -22,25 +25,29 @@ body{
 .poke_card{
     border: 1px solid black;
     width: 280x;
-    height: 350px;
+    height: 370px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10px;
-    border-radius: 20px ;
-}
+    margin: 15px;
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 33px -12px rgba(0, 0, 0, 1);}
 
 .pokemon_image{
-    background-color: #eee;
+    background-color: rgb(204, 200, 200);
     border-radius: 50%; 
     margin-top: -10px;
+    margin: -10px 10px 0 10px;
 }
+
 
 .poke_name{
     background-color: #fff;
     padding: 5px;
     border-radius: 15px;
+    margin-top: -10px;
 }
 
 .pokemon_type{
@@ -52,6 +59,7 @@ body{
 
 .pokemon_stats{
     display: flex;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .hp, .atack, .defense{
