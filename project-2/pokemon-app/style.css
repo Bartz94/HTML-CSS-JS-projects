@@ -4,8 +4,9 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(to bottom right, #0D2952, #305792);
+    /* background-image: linear-gradient(to bottom right, #0D2952, #305792); */
     background-color: #0D2952;
+    background-repeat: no-repeat;
     font-family: pokemon, roboto, Arial;
 }
 
@@ -13,6 +14,8 @@ body{
     display: flex;
     justify-content: center;
     margin: 20px;
+    background-repeat: no-repeat;
+
 }
 
 .search_form{
@@ -30,6 +33,20 @@ body{
     border: none;
     font-size: 30px;
     color: #FFCD00;
+    cursor: pointer;
+}
+
+.filters{
+    display: flex;
+    justify-content: center;
+    color: #FFCD00;
+    font-size: 20px;
+}
+
+.filters p {
+    border: 1px solid #FFCD00;
+    border-radius: 20px;
+    padding: 10px;
     cursor: pointer;
 }
 
