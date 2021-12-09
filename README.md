@@ -17,4 +17,5 @@ Second project, coding in JS.
 - [Random Color](https://github.com/infoshareacademy/jfdzr5-projects-Bartz94/tree/main/project-2/random-color) 
 - [Event Counter](https://github.com/infoshareacademy/jfdzr5-projects-Bartz94/tree/main/project-2/event-counter) 
 - [Vowel Counter](https://github.com/infoshareacademy/jfdzr5-projects-Bartz94/tree/main/project-2/vowel-counter) 
-
+- [Simple Todo App](https://github.com/infoshareacademy/jfdzr5-projects-Bartz94/tree/main/project-2/todo-app) 
+- [PokeApiDex](https://github.com/infoshareacademy/jfdzr5-projects-Bartz94/tree/main/project-2/pokemon-app) 
