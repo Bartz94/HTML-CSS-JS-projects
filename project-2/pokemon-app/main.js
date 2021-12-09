@@ -1,5 +1,7 @@
+//CREATING VARIABLES
 const maxPokemons = 151;
 const pokeBoxContainer = document.querySelector('#container');
+const searchForm = document.querySelector('#search_form');
 
 const typeColors = {
     normal: '#A8A77A',
@@ -22,23 +24,26 @@ const typeColors = {
     fairy: '#D685AD',
 };
 
+//GETING RIGHT AMOUNT OF POKEMONS
 const getMaxPokemons = async () => {
     for (let i = 1; i <= maxPokemons; i++) {
         await getPokemon(i);
     }
-}
+};
 
+//FETCHING DATA FROM POKEAPI
 const getPokemon = async id => {
     const link = `https://pokeapi.co/api/v2/pokemon/${id}`;
     const res = await fetch(link);
     const pokemon = await res.json();
     createPokemonBox(pokemon)
-    console.log(pokemon)
-}
+    // console.log(pokemon)
+};
 
+//CREATING POKEMON CARD
 function createPokemonBox(pokemon) {
     const pokemonBox = document.createElement('div');
-    const name = pokemon.name[0].toUpperCase() + pokemon.name.slice(1);;
+    const name = pokemon.name[0].toUpperCase() + pokemon.name.slice(1);
     const typeName = pokemon.types[0].type.name[0].toUpperCase() + pokemon.types[0].type.name.slice(1);
 
     const cardColor = typeColors[pokemon.types[0].type.name];
@@ -60,5 +65,21 @@ function createPokemonBox(pokemon) {
     pokemonBox.style.backgroundColor = cardColor;
     pokeBoxContainer.appendChild(pokemonBox)
 }
+
+//SEARCH FORM EVENT LISTENER
+searchForm.addEventListener('submit', async (e) => {
+    e.preventDefault()
+
+    const getPokemon = async id => {
+        const link = `https://pokeapi.co/api/v2/pokemon/${id}`;
+        const res = await fetch(link);
+        const pokemon = await res.json();
+        createPokemonBox(pokemon)
+    };
+    getPokemon()
+    if (searchForm.value === pokemon.name) {
+        getMaxPokemons();
+    }
+})
 
 getMaxPokemons();
