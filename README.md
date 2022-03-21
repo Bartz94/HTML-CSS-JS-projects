@@ -14,7 +14,7 @@
 
 | Name | Description | Demo   |
 | -------------|:-----------:| ------------:|
-| Random Color | Generates a random color with the ability to copy the result (HEX or RGB) to the clipboard | [Try it out](https://goofy-hodgkin-9ee6d6.netlify.app/)   |
+| Random Color | Generates a random color with the ability to copy the result (HEX or RGB) to the clipboard | [Try it out](https://eclectic-arithmetic-e591e0.netlify.app/)|
 | Event Counter | Application for counting time to a selected event, e.g. Christmas | [Try it out](https://agitated-wiles-bc0524.netlify.app/)  |
 | Vowel Counter | After pasting the sentence, this app will display how many vowels we used | [Try it out](https://inquisitive-quokka-71b312.netlify.app/) |
 | Simple Todo App | A simple application where we can add, delete and set tasks as done| [Try it out](https://prismatic-meringue-280d01.netlify.app/) |
