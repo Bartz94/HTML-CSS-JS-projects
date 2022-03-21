@@ -1,17 +1,21 @@
-# Project 1
+## This repository contains the projects I made during the bootcamp.
 
-The first project where I try my best to copy the page layouts from the links given below.
+# HTML/CSS Projects
+### In the first project, we were asked to create copies of selected page layout
+  
+| Layout       | Inspiration | My Attempts  |
+| -------------|:-----------:| ------------:|
+| 1 | [HomePage](https://imgur.com/sFaHtJi)                                  | [Try it out](https://goofy-hodgkin-9ee6d6.netlify.app/)   |
+| 2 | [Services](https://imgur.com/p5wTaY3)                                  | [Try it out](https://vibrant-wilson-9093c8.netlify.app/)  |
+| 3 | [Mina](https://zyro.com/pl/preview/mina?returnPath=/templates#desktop) | [Try it out](https://flamboyant-bose-eb92ce.netlify.app/) |
 
-- [Layout 1](https://github.com/Bartz94/HTML-CSS-JS-projects/tree/main/HTML-CSS-projects/layout-01) 
-- [Layout 2](https://github.com/Bartz94/HTML-CSS-JS-projects/tree/main/HTML-CSS-projects/layout-02)
-- [Layout 3](https://github.com/Bartz94/HTML-CSS-JS-projects/tree/main/HTML-CSS-projects/layout-03) 
+# JavaScript Projects
+### In the second project, I was tasked with creating simple JavaScript-based applications.
 
-# Project 2
-
-Second project, using JavaScript for building some simple aplication.
-
-- [Random Color](https://github.com/Bartz94/HTML-CSS-JS-projects/tree/main/JS-projects/random-color) 
-- [Event Counter](https://github.com/Bartz94/HTML-CSS-JS-projects/tree/main/JS-projects/event-counter) 
-- [Vowel Counter](https://github.com/Bartz94/HTML-CSS-JS-projects/tree/main/JS-projects/vowel-counter) 
-- [Simple Todo App](https://github.com/Bartz94/HTML-CSS-JS-projects/tree/main/JS-projects/todo-app) 
-- [PokeApiDex](https://github.com/Bartz94/HTML-CSS-JS-projects/tree/main/JS-projects/pokemon-app) 
+| Name | Description | Demo   |
+| -------------|:-----------:| ------------:|
+| Random Color | Generates a random color with the ability to copy the result (HEX or RGB) to the clipboard | [Try it out](https://goofy-hodgkin-9ee6d6.netlify.app/)   |
+| Event Counter | Application for counting time to a selected event, e.g. Christmas | [Try it out](https://agitated-wiles-bc0524.netlify.app/)  |
+| Vowel Counter | After pasting the sentence, this app will display how many vowels we used | [Try it out](https://inquisitive-quokka-71b312.netlify.app/) |
+| Simple Todo App | A simple application where we can add, delete and set tasks as done| [Try it out](https://prismatic-meringue-280d01.netlify.app/) |
+| PokeApiDex | Fetching data from pokeapi to display 151 pokemons and their stats | [Try it out](https://steady-wisp-41401a.netlify.app/) |
