@@ -5,7 +5,9 @@ html{
 body{
     color: rgb(181, 186, 187);
     margin: 0 auto;
-    background-image: url("images/bg-image.jpg");
+    background: #232526; 
+    background: -webkit-linear-gradient(to right, #232526, #414345); 
+    background: linear-gradient(to right, #1d1f1f, #101011);
 }
 
 /* NAVIGATION SET UP */
