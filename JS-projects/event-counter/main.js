@@ -1,6 +1,6 @@
 function init() {
     setInterval(function () {
-        const dateGoal = new Date("Dec 25, 2021").getTime();
+        const dateGoal = new Date("Dec 24, 2022").getTime();
         let dateCurrent = new Date().getTime();
         let dateDifference = dateGoal - dateCurrent;
 
@@ -21,10 +21,10 @@ function init() {
 
         if (dateDifference < 0) {
             clearInterval();
-            dayText.textContent = 'FINISH';
-            hourText.textContent = 'FINISH';
-            minuteText.textContent = 'FINISH';
-            secondText.textContent = 'FINISH';
+            dayText.textContent = 'O';
+            hourText.textContent = 'V';
+            minuteText.textContent = 'E';
+            secondText.textContent = 'R';
         };
     }, 1000);
 
